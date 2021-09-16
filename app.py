@@ -16,7 +16,7 @@ def get_widget_value(widget):
     return widget.title()
 
 
-st.sidebar.subtitle("Parameters")
+st.sidebar.subheader("Parameters")
 
 client_id_widget = st.sidebar.text_input('Enter Client Id (eg 1): ')
 
