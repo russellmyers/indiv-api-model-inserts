@@ -60,7 +60,7 @@ if st.button("Generate"):
                  f'<small><i>Note:</i> If ModelConfigurations SQL insert fails with duplicate key, just ignore (ie necessary record already exists)</small></div>'
         #st.markdown(html_string, unsafe_allow_html=True)
         st.markdown(result, unsafe_allow_html=True)
-        query = model_configurations_insert(4, 'Rusty')
+        query = model_configurations_insert(model_id, username)
         st.subheader("payAnomaly.ModelConfigurations SQL INSERT statements:")
         st.success(query)
 
