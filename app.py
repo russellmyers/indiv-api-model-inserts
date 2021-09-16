@@ -16,6 +16,8 @@ def get_widget_value(widget):
     return widget.title()
 
 
+st.widget.subtitle("Parameters")
+
 client_id_widget = st.sidebar.text_input('Enter Client Id (eg 1): ')
 
 payrun_id_widget = st.sidebar.text_input('Enter PayRun Id (eg 2): ')
