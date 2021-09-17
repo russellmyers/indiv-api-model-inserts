@@ -1,0 +1,1 @@
+# Generate Indiv API Model Config SQL Insert statements
