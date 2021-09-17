@@ -12,6 +12,7 @@ def generate_id(client_id, payrun_id):
     generated_id = f'{int(client_id)}{int(payrun_id):02}'
     return int(generated_id)
 
+
 def model_configurations_insert(model_id, username):
 
     now_formatted = format_datetime_now()
@@ -66,6 +67,7 @@ def model_versions_insert(model_id, model_version_id, pay_group_name, username):
     print(f'Inserting ModelVersions: {query}')
     return query
 
+
 def model_keys_insert(client_id, payrun_id, username, model_key_id):
     now_formatted = format_datetime_now()
 
@@ -92,6 +94,7 @@ def model_keys_insert(client_id, payrun_id, username, model_key_id):
     print(f'Inserting ModelKeys: {query}')
 
     return query
+
 
 def model_blob_storage_insert(client_id, payrun_id, username, model_blob_storage_id, model_id, model_version_id):
     now_formatted = format_datetime_now()
@@ -121,8 +124,6 @@ def model_blob_storage_insert(client_id, payrun_id, username, model_blob_storage
     return query
 
 
-
-
 if __name__ == '__main__':
     client_id = 1
     payrun_id = 63
@@ -133,13 +134,10 @@ if __name__ == '__main__':
     pay_group_name = 'monthly'
     username = 'Rusty'
 
-    model_configurations_insert(model_id,username)
+    model_configurations_insert(model_id, username)
 
     model_versions_insert(model_id, model_version_id, pay_group_name, username)
 
     model_keys_insert(client_id, payrun_id, username, model_key_id)
 
     model_blob_storage_insert(client_id, payrun_id, username, model_blob_storage_id, model_id, model_version_id)
-
-
-

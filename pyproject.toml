@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "indiv-api-model-inserts"
+version = "0.1.0"
+description = "Streamlit app to generate Indiv API Model Config SQL INSERTS"
+authors = ["russellmyers <flipside@netspace.net.au>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+streamlit = "^0.88.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
