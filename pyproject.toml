@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "indiv-api-model-inserts"
-version = "0.1.0"
+version = "0.1.1"
 description = "Streamlit app to generate Indiv API Model Config SQL INSERTS"
 authors = ["russellmyers <flipside@netspace.net.au>"]
 

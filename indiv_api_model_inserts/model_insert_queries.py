@@ -125,19 +125,20 @@ def model_blob_storage_insert(client_id, payrun_id, username, model_blob_storage
 
 
 if __name__ == '__main__':
-    client_id = 1
-    payrun_id = 63
-    model_id = 4
-    model_version_id = 51
-    model_key_id = 51
-    model_blob_storage_id = 451
-    pay_group_name = 'monthly'
-    username = 'Rusty'
+    sel_client_id = 1
+    sel_payrun_id = 63
+    sel_model_id = 4
+    sel_model_version_id = 51
+    sel_model_key_id = 51
+    sel_model_blob_storage_id = 451
+    sel_pay_group_name = 'monthly'
+    sel_username = 'Rusty'
 
-    model_configurations_insert(model_id, username)
+    model_configurations_insert(sel_model_id, sel_username)
 
-    model_versions_insert(model_id, model_version_id, pay_group_name, username)
+    model_versions_insert(sel_model_id, sel_model_version_id, sel_pay_group_name, sel_username)
 
-    model_keys_insert(client_id, payrun_id, username, model_key_id)
+    model_keys_insert(sel_client_id, sel_payrun_id, sel_username, sel_model_key_id)
 
-    model_blob_storage_insert(client_id, payrun_id, username, model_blob_storage_id, model_id, model_version_id)
+    model_blob_storage_insert(sel_client_id, sel_payrun_id, sel_username, sel_model_blob_storage_id,
+                              sel_model_id, sel_model_version_id)
